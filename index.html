@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <title>WhatsUp SUVO</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="sanfrancisco.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  </head>
+  <body>
+    <div id="map"></div>
+    <main>
+     
+
+      <div id="profile">
+       <a href="https://www.facebook.com/suvo.dwep.7"> <img src="/img/me.jpg" class="profile-image "></a>
+        <h3 class="head1">SUVO Is Currently in <span class="highlighted-text">Karimpur</span></h3>
+       <p class="lead1">Leaving for <span class="highlighted-text">Karimpur</span> in 3 days</p>
+      </div>
+      
+
+      <section class="content">
+        <table class="upconming-table">
+          <tr>
+            <th><p class="lead1">Upcoming Trip</p></th>
+            <th ><p class="lead1">From</p></th>
+            <th><p class="lead1">To</p></th>
+          </tr>
+          <tr>
+            <td><span class="highlighted-text"><span id="upcoming-trip highlighted-text">darjeeling</span></span></td>
+            <td ><span id="upcoming-trip-from"><p class="lead3">10 NOV</p></span></td>
+            <td><span class="upcoming-trip-to"><p class="lead3">15 NOV</p></span></td>
+          </tr>
+        
+         
+        </table>
+
+        <hr>
+        <div class="isFelling">
+          <hr class="hr1">
+          <h3 class="head1">Suvo is  
+            <span class="highlighted-text">
+              <span id="mood">
+                felling Happy &#128512;
+              </span>
+
+          </span>
+           <span id="mood-time">(3 hour ago)</span></span>
+               
+             
+            </h3>
+        <hr class="hr1">
+
+        </div>
+        <div class="helth">
+       
+          <table id="helthTable" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <td><p class="lead2">Weight</p></td>
+              <td>
+                <span class="highlighted-text"><span id="curren-waight">67.5kg</span></span>
+                <span id="curren-waight-time">(3 day ago)</span>
+              </td>
+            </tr>
+            <tr>
+              <td><p class="lead2">Height</p></td>
+              <td>
+                <span class=""><span class="highlighted-text"><span id="current-height">172cm</span></span> </span>
+              </td>
+            </tr>
+            <tr>
+              <td><p class="lead2">Slept</p></td>
+              <td id="current-sleep-duration" class=""><span class="highlighted-text"><span id="lastnight-sleep">5</span></span> <span >(last night)</span></td>
+            </tr>
+            <tr>
+              <td><p class="lead2">Last Workout</p></td>
+              <td><span class="highlighted-text">None</span></td>
+            </tr>
+           
+           
+            <tr>
+              <td><p class="lead2">Last Meditated</p></td>
+              <td><span class="highlighted-text">10 days </span>ago</td>
+            </tr>
+            <tr>
+              <td><p class="lead2">Inbox</p></td>
+              <td><span class="highlighted-text"><span id="current-mail">4 emails</span></span></td>
+            </tr>
+            <tr>
+              <td><p class="lead2">Pending to Do</p></td>
+              <td><span class="highlighted-text" > <span id="pening-todo">5 tasks</span></span></td>
+            </tr>
+            <tr>
+              <td><p class="lead2">Ongoing projects</p></td>
+              <td><span class="highlighted-text" ><span id="ongoing-project">3</span></td>
+            </tr>
+            <tr>
+              <td><p class="lead2">Last coding</p></td>
+              <td><span class="highlighted-text" > <span id="last-coding">3 hour</span></span>(today)</td>
+            </tr>
+          
+           
+            <tr>
+              <td><p class="lead2">Caffeine intake</p></td>
+              <td><span class="highlighted-text">2 times</span>(today)</td>
+            </tr>
+          </tbody></table>
+
+        </div>
+      </section>
+      <section class="personal-slider">
+        <h2 class="head1">Recent Photos</h2>
+        <div class="slider">
+          <div class="slide"><img src="/img/slider1.JPG" alt=""></div>
+          <div class="slide"><img src="/img/slider2.JPG" alt=""></div>
+          <div class="slide"><img src="/img/slider7.JPG" alt=""></div>
+          <div class="slide"><img src="/img/slider4.JPG"alt=""></div>
+          <div class="slide"><img src="/img/slider5.JPG"alt=""></div>
+          <div class="slide"><img src="/img/slider6.JPG"alt=""></div>
+          <div class="slide"><img src="/img/slider3.JPG"alt=""></div>
+          <div class="slide"><img src="/img/slider9.jfif"alt=""></div>
+          <div class="slide"><img src="/img/slider10.jfif"alt=""></div>
+        
+        
+        
+        </div>
+
+
+
+
+      </section>
+
+
+
+
+      <section class="background-section">
+        <div>
+          <p class="heading-bg">Why i am putting all details in one singe database? <br></p> 
+          <p class="lead-bg">The goal of this project is  to answer questions  about my life, like<br>How does living in different cities affect other factors like fitness, productivity and happiness?<br>
+           How does sleep affect my day, my fitness level,My Mood and happiness?<br>
+           How does computer time,work, and hours affect my personal life?<br>
+           after some month i will check my data statistics graph here &#128512;</p>
+
+        </div>
+         
+      </section>
+    </main>
+
+   
+
+      <script src="app.js"></script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRCj9yQ_6Hq7SoJucR2UpgDdgkHL_0KJg&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>
