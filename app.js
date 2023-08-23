@@ -108,9 +108,7 @@ slider.addEventListener('mousedown', (e) => {
 slider.addEventListener('mouseleave', () => {
   isDown = false;
 });
-slider.addEventListener('mouseup', () => {
-  isDown = false;
-});
+
 
 slider.addEventListener('mousemove', (e) => {
   if(!isDown) return;
